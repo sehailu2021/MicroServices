@@ -1,0 +1,9 @@
+Part 3
+A problem with a registry is that it is a single point of failure. Describe how you would solve this single point of failure problem?
+
+    for single ptoint failure, i wolid solve by replicating the registry/discovery service so that if one server is down the request goes to the next one.configure by comma separation.
+
+Part 4
+A problem with services is that a service can be down. If the StockService is down, the ProductService cannot work properly. Describe how you would solve this problem?
+
+      for this problem i would solve by using client side load balancer for multiple sevice instances,determine to which working instance a request should go.
